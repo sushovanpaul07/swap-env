@@ -1,0 +1,33 @@
+{
+  "name": "switch-env",
+  "version": "1.0.0",
+  "description": "The best .env switching tool available.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "switch-env": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushovanpaul07/switch-env.git"
+  },
+  "keywords": [
+    "switch-env"
+  ],
+  "author": "Sushovan Paul",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sushovanpaul07/switch-env/issues"
+  },
+  "homepage": "https://github.com/sushovanpaul07/switch-env#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "conf": "^11.0.1",
+    "enquirer": "^2.3.6",
+    "fs": "^0.0.1-security",
+    "inquirer": "^9.2.7"
+  }
+}
