@@ -7,7 +7,7 @@ const {initializeIntoProject,displayEnvList,switchToEnv,displayCurrentEnv} = req
 
 program
   .command("init")
-  .description("Initialize Switch-Env into current Project")
+  .description("Initialize Swap-Env into current Project")
   .action(initializeIntoProject);
 
 program
