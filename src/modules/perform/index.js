@@ -10,7 +10,7 @@ exports.addRuleTogitignore = async () => {
   if(fs.existsSync('.gitignore')){
     await fs.promises.appendFile(
       ".gitignore",
-      "\n\n# === Rules for switch-env === \n./envs"
+      "\n\n# === Rules for swap-env === \n./envs"
       );
       log.logAddedEnvsToGitignore();
     }

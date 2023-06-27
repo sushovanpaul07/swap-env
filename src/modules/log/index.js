@@ -1,7 +1,7 @@
 const chalk = require("chalk");
 log = console.log;
 exports.logExitingMessage = () => {
-  log(chalk.hex("#a144f2").bold("❌ Exiting switch-env setup..."));
+  log(chalk.hex("#a144f2").bold("❌ Exiting swap-env setup..."));
 };
 
 exports.logEnvsFolderCreated = () => {
@@ -37,7 +37,7 @@ exports.logEnvSwitched = (prev, current) => {
 exports.logEnvsNotPresent = () => {
   log(
     chalk.redBright.bold("❌ './envs' folder has not been created "),
-    chalk.cyanBright.bold("--run command 'switch-env init'")
+    chalk.cyanBright.bold("--run command 'swap-env init'")
   );
 };
 
@@ -45,7 +45,7 @@ exports.logEnvsNotPresent = () => {
 exports.logConfNotPresent = () => {
   log(
     chalk.redBright.bold("❌ configs have not been created "),
-    chalk.cyanBright.bold("--run command 'switch-env init'")
+    chalk.cyanBright.bold("--run command 'swap-env init'")
   );
 };
 
