@@ -1,15 +1,15 @@
-# switch-env
+# swap-env
 The best .env switching tool available 
 
 # About
 
-Switch-env is an open-source tool which makes switching between multiple .env files very easy.
+Swap-Env is an open-source tool which makes switching between multiple .env files very easy.
 > Star 🌟 & watch 👀 the repository to get updates.
 
 ## Features:
 
 - **🧑‍💻 Tech Stack Independent**: It integrates will all tech stacks.
-- **🪶 Fast->Faster->Fastest**: Switched envs in a blink.
+- **🪶 Fast->Faster->Fastest**: Switches envs in a blink.
 - **⚡️ Interactive**: CLI tool but very interactive.
 
 
@@ -20,16 +20,16 @@ Switch-env is an open-source tool which makes switching between multiple .env fi
 
 Run command after making sure NodeJs is installed:
 ```shell
-npm i -g switch-env
+npm i -g swap-env
 ```
 
 **That's it.**
 
-Once complete ```switch-env``` will be available as a CLI command.
+Once complete ```swap-env``` will be available as a CLI command.
 
 To test your installation run command:
 ```shell
-switch-env --help
+swap-env --help
 ```
 
 
@@ -41,10 +41,10 @@ switch-env --help
 
 To initialize run command:
 ```shell
-switch-env init
+swap-env init
 ```
 
-This command will initialize ```switch-env``` into your current project.
+This command will initialize ```swap-env``` into your current project.
 
 It creates ```/envs``` folder in the root folder of your project.
 
@@ -57,7 +57,7 @@ You are good to go.
 
 To switch between .env(s) run command:
 ```shell
-switch-env switch
+swap-env switch
 ```
 
 This will open a interactive selector, where you can use your arrow keys to select a target Environment.
@@ -66,7 +66,7 @@ This will open a interactive selector, where you can use your arrow keys to sele
 
 To view all available envs run command:
 ```shell
-switch-env ls
+swap-env ls
 ```
 
 
@@ -74,7 +74,7 @@ switch-env ls
 
 To view current Environment run command:
 ```shell
-switch-env current
+swap-env current
 ```
 
 
