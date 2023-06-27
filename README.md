@@ -20,10 +20,17 @@ Switch-env is an open-source tool which makes switching between multiple .env fi
 
 Run command after making sure NodeJs is installed:
 ```shell
-npm i switch-env -g
+npm i -g switch-env
 ```
 
 **That's it.**
+
+Once complete ```switch-env``` will be available as a CLI command.
+
+To test your installation run command:
+```shell
+switch-env --help
+```
 
 
 # How To Use?
