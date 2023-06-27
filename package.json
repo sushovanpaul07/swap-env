@@ -25,9 +25,11 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^11.0.0",
-    "conf": "^11.0.1",
     "enquirer": "^2.3.6",
     "fs": "^0.0.1-security",
-    "inquirer": "^9.2.7"
+    "g": "^2.0.1",
+    "inquirer": "^9.2.7",
+    "node-global-storage": "^1.2.3",
+    "node-storage": "^0.0.9"
   }
 }

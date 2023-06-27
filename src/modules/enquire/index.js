@@ -10,14 +10,24 @@ exports.toCreategitignore = async() => {
     message: chalk.hex('#eaf72a').bold("Do you want to create a '.gitignore' file"),
     choices: [CREATE_GITIGNORE_TRUE, CREATE_GITIGNORE_FALSE],
   });
-
+  
   const answers = await prompt.run()
-  console.log(answers)
   if(answers === CREATE_GITIGNORE_TRUE){
     await createGitignoreFile();
+    return true
   }
-  else{
-    log.logExitingMessage();
-    process.exit(0)
-  }
+
+  else return false
 };
+
+exports.toSelectEnv = async(envList) => {
+
+  const prompt = new Select({
+    name: "switch",
+    message: chalk.hex('#eaf72a').bold("Choose the target Environment."),
+    choices: envList.map((env)=>({message:chalk.hex("#44f25e").bold(env),name:env})),
+  });
+  const answer = await prompt.run();
+  console.log("answer",answer)
+  return answer;
+  };

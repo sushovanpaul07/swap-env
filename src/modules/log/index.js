@@ -26,6 +26,14 @@ exports.logEnvsAlreadyPresent = () => {
   log(chalk.hex("#f77f2a").bold("⚠ ./envs already exists."));
 };
 
+exports.logEnvSwitched = (prev, current) => {
+  log(
+    chalk.greenBright.bold(
+      `✔ ENVIRONMENT switched ${prev.toUpperCase()} ---> ${current.toUpperCase()}`
+    )
+  );
+};
+
 exports.logEnvsNotPresent = () => {
   log(
     chalk.redBright.bold("❌ './envs' folder has not been created "),
@@ -33,6 +41,23 @@ exports.logEnvsNotPresent = () => {
   );
 };
 
-exports.logListOfFiles = (files) =>{
-    console.table(files);
-}
+
+exports.logConfNotPresent = () => {
+  log(
+    chalk.redBright.bold("❌ configs have not been created "),
+    chalk.cyanBright.bold("--run command 'switch-env init'")
+  );
+};
+
+
+exports.logListOfFiles = (files) => {
+  console.table(files);
+};
+
+exports.logCurrentEnv = (currentEnv) => {
+  log(
+    chalk.greenBright.bold(
+      `✔ Current Environment is set to  ${currentEnv.toUpperCase()}`
+    )
+  );
+};
