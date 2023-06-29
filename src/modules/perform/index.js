@@ -21,7 +21,7 @@ exports.showEnvList = async (suppressLog=false) => {
   const files = fileList.map(
     (file) => ({ FileName: file, EnvName: file.split(".")[0] })
   );
-  if(suppressLog)
+  if(!suppressLog)
     log.logListOfFiles(files);
   return files;
 };
@@ -31,7 +31,7 @@ exports.updateCurrentEnv = async () =>{
 }
 
 exports.envSwitcher = async (prevEnv) => {
-  const fileList = await this.showEnvList();
+  const fileList = await this.showEnvList(true);
   selectedEnv = await enquire.toSelectEnv(
     fileList.map((env) => env.EnvName.toUpperCase())
   );

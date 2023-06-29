@@ -28,8 +28,6 @@
     "enquirer": "^2.3.6",
     "fs": "^0.0.1-security",
     "g": "^2.0.1",
-    "inquirer": "^9.2.7",
-    "node-global-storage": "^1.2.3",
     "node-storage": "^0.0.9"
   }
 }
