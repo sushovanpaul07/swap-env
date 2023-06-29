@@ -28,6 +28,5 @@ exports.toSelectEnv = async(envList) => {
     choices: envList.map((env)=>({message:chalk.hex("#44f25e").bold(env),name:env})),
   });
   const answer = await prompt.run();
-  console.log("answer",answer)
   return answer;
   };

@@ -21,7 +21,6 @@ exports.doesEnvsExist = async (createIfAbsent = false) => {
       process.exit(0);
     }
     else{
-        console.log("comes here")
         await fs.promises.mkdir("./envs");
         log.logEnvsFolderCreated();
     }

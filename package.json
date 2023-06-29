@@ -1,6 +1,6 @@
 {
   "name": "swap-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The best .env switching tool available.",
   "main": "index.js",
   "scripts": {
